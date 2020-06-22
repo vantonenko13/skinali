@@ -58,6 +58,11 @@ body {
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
+.button-o:hover {
+  color: #ffffff;
+  background-color: #507fe1;
+}
+
 .button {
   text-transform: uppercase;
   border: none;
