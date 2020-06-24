@@ -8,6 +8,7 @@
         display: flex
         justify-content: space-between
         align-items: center
+        // height: 80px
     &__mobile, &__landline
         text-align: right
     &__phone
@@ -77,14 +78,19 @@
     .navbar 
         &__mobile, &__landline
             display: none
+    .menu__link
+        text-align: center
+        font-size: 12px
+        margin-right: 10px
+        &:last-child
+            margin-right: 0
+
 @media (max-width:576px)
     .logo
         display: none
     .menu
         &__nav
             flex-direction: column
-        &-button
-            height: 60px
         &__link
             margin-bottom: 20px
             
