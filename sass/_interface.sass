@@ -1,8 +1,10 @@
 body
   color: $text-color
   +light
+img
+  max-width: 100%
 .section
-  padding-top: 100px
+  padding: 100px 0 
   &-title
     font-size: 30px
     text-align: center
@@ -18,6 +20,7 @@ body
   font-size: 12px
   color: $primary
   background-color: #fff
+  text-decoration: none
   +bold
   &:hover 
     color: #ffffff
@@ -25,18 +28,36 @@ body
 
 .button
   text-transform: uppercase
+  text-decoration: none
   border: none
   padding: 25px 45px
   background-color: $primary
   color: #fff
   cursor: pointer
   +bold
+.button-fitting
+  color: $primary
+  background-color: #fff
+.button-add
+  background-color: lighten($primary, 10%)
+  padding: 10px
+  color: #ffffff
+.button-like
+  background-color: $primary
+  border: none
+  height: 30px
+  width: 30px
+
+ 
+
+
 .bg-secondary 
   background: $bg-secondary
 .input
   height: 80px
   padding-left: 30px
   border: 1px solid #dddddd
+  border-right: none
 .checkbox
   display: none
   &:checked + label:before
