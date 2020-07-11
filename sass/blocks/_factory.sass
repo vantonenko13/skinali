@@ -1,0 +1,31 @@
+.factory
+    padding-top: 0
+    .section__title
+        margin: 0
+    &-block
+        display: flex
+        justify-content: space-between
+        padding: 100px
+        &__text
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            padding-left: 70px
+            .factory__text
+                margin: 0 0
+                font-size: 20px
+                line-height: 30px
+                +bold
+        &__image
+            display: block
+            max-width: 370px
+@media (max-width: 991px)
+    .factory-block
+        flex-direction: column
+        align-items: center
+        &__text
+            padding: 0
+        .factory__text
+            margin-top: 30px
+            width: 370px
+            text-align: center
