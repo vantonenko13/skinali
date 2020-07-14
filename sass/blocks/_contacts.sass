@@ -1,0 +1,55 @@
+.contacts-link
+    display: flex
+    justify-content: space-around
+    margin-bottom: 40px
+    &__group
+        position: relative
+        svg
+            width: 30px
+            height: 30px
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            z-index: -1
+    &__item
+        display: block
+        padding-top: 50px
+        height: 70px
+        cursor: pointer
+        text-decoration: none
+        color: #000
+        text-align: center
+        
+.contacts-link__group:hover>svg 
+    fill: $primary
+    color: $primary
+.contacts-group
+    padding: 80px 0
+    display: flex
+    justify-content: center
+    align-items: center
+    &__title, .question__link
+        margin: 0 15px
+        +bold
+    &__title
+        font-size: 30px
+    .question__link
+        font-size: 24px
+        color: $primary
+@media (max-width: 768px)
+    .contacts-link
+        flex-direction: column
+
+
+            
+                
+            
+           
+            
+    // .tel
+    //     background: url('../img/contacts/phone-call.png') no-repeat center top
+    // .address
+    //     background: url('../img/contacts/placeholder.png') no-repeat center top
+    // .mail
+    //     background: url('../img/contacts/message.png') no-repeat center top
