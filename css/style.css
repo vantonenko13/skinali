@@ -192,8 +192,11 @@ img {
   padding: 25px 45px;
   background-color: #507fe1;
   color: #fff;
-  cursor: pointer;
   font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+button, a {
+  cursor: pointer;
 }
 
 .button-fitting {
@@ -371,6 +374,10 @@ img {
   width: 70px;
 }
 
+.menu-button:focus {
+  outline: none;
+}
+
 .menu-button__line {
   display: block;
   width: 20px;
@@ -391,6 +398,10 @@ img {
   display: block;
   font-size: 14px;
   color: #7b7b79;
+}
+
+.hidden__menu {
+  display: none;
 }
 
 @media (max-width: 991px) {
@@ -523,6 +534,7 @@ img {
   width: 300px;
   text-align: center;
   padding: 5px;
+  cursor: pointer;
 }
 
 .form-group {
@@ -665,15 +677,27 @@ img {
   position: relative;
   -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
           box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
 }
 
-.catalog-card__buttons {
+.catalog-card:hover .catalog-card__buttons {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.catalog-card .catalog-card__buttons {
   position: absolute;
   bottom: 0;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
 .catalog-card__button {

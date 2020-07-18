@@ -58,6 +58,8 @@
         border-left: 1px solid #eee7f8
         height: 80px
         width: 70px
+        &:focus
+            outline: none
         &__line
             display: block
             width: 20px
@@ -75,6 +77,8 @@
         display: block
         font-size: 14px
         color: $text-color-light
+.hidden__menu
+    display: none
 @media (max-width: 991px)
     .navbar 
         &__mobile, &__landline
