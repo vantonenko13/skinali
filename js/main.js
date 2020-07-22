@@ -17,7 +17,3 @@ console.log(a);
     headerMenu.classList.remove("menu_active");
   };
 });
-
-// [1, 2, 3].forEach(function (num) {
-//   console.log(num);
-// });
